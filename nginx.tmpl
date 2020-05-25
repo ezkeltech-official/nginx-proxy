@@ -145,7 +145,7 @@ proxy_buffers           32 4k;
 proxy_set_header X-Content-Type-Options nosniff;
 proxy_set_header X-UA-Compatible IE=edge,chrome=1;
 proxy_set_header X-Download-Options noopen;
-proxy_set_header X-XSS-Protection 1; mode=block;
+proxy_set_header X-XSS-Protection "1; mode=block";
 
 # Mitigate httpoxy attack (see README for details)
 proxy_set_header Proxy "";
